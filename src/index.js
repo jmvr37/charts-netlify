@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import "tailwindcss/tailwind.css";
 import reportWebVitals from './reportWebVitals';
+import SearchCity from './components/SearchCity';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ <>
+    
+    <SearchCity />
+ </>,
   document.getElementById('root')
 );
 
