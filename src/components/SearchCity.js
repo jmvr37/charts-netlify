@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { TOKEN, SEARCH_CITIES_URL, FEED_AQICN_URL, FEED_AQICN_AUTO } from './AQIConst';
+import { TOKEN, SEARCH_CITIES_URL} from './AQIConst';
 import { useAQIAPIs } from './useAQIAPIs';
 import CityAQIList from './CityAQIList';
 import { Typeahead } from 'react-bootstrap-typeahead';
@@ -33,12 +33,12 @@ const SearchCity = (props) => {
   return(
       <div>
           { error }
-          <Typeahead
+          {/* <Typeahead
             id="basic-example"
             onChange={setSelected}
             options={options}
             placeholder="Choose a state..."
-          selected={selected}/>
+          selected={selected}/> */}
           <form 
           class="m-2 flex justify-center"
           onSubmit={ e => searchCityName(e)}>

@@ -20,7 +20,7 @@ const CityAQIList = props => {
                     </span>
                 ))
                 :
-                <h1>no data found, try another city</h1>
+                <h1 class="font-sans text-xl ">No data found, try another city</h1>
             }
         </div>
     )

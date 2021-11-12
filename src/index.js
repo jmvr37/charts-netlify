@@ -7,7 +7,6 @@ import Home from './components/Home';
 
 ReactDOM.render(
  <>
- <h1>hello</h1>
     <Home />
  </>,
   document.getElementById('root')

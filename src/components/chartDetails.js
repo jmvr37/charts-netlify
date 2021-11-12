@@ -8,8 +8,8 @@ const ChartDetails = props => {
     const [info, error] = useAQIAPIs(
         `${FEED_AQICN_URL}${props.uid}/?token=${TOKEN}`
     );
-    console.log("info")
-    console.log(info)
+    // console.log("info")
+    // console.log(info)
     let result = []
     if (info.data) result = info.data.forecast.daily.o3.map((day, i) => {
         let result = {
