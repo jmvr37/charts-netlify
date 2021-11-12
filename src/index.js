@@ -3,12 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import "tailwindcss/tailwind.css";
 import reportWebVitals from './reportWebVitals';
-import SearchCity from './components/SearchCity';
+import Home from './components/Home';
 
 ReactDOM.render(
  <>
-    
-    <SearchCity />
+    <Home />
  </>,
   document.getElementById('root')
 );
