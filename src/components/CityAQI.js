@@ -24,9 +24,6 @@ const CityAQI = props => {
             <h1 class="text-lg font-sans font-light">See forecast details for o3, pm25 and pm10 on chart beside </h1>
             </div>
             <ChartDetails  uid={uid}/> 
-            
-          
-            
         </div>
     )
 };
