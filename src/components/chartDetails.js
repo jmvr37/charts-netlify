@@ -13,8 +13,8 @@ const ChartDetails = props => {
     if (info.data && info.data.forecast) result = info.data.forecast.daily.o3.map((day, i) => {
         let result = {
             name: day.day,
-            o3: day.max
-        }
+            o3: day.min
+        } 
         if (info.data.forecast.daily.pm25 && info.data.forecast.daily.pm25[i]) result.pm25 = info.data.forecast.daily.pm25[i].avg
         if (info.data.forecast.daily.pm10 && info.data.forecast.daily.pm10[i]) result.pm10 = info.data.forecast.daily.pm10[i].avg
         return result
