@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import moment from 'moment';
-import ChartDetails from './chartDetails';
+import ChartDetails from './ChartDetails';
 
 const CityAQI = props => {
     const aqi = props.cityInfo.aqi;
