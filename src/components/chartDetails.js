@@ -8,12 +8,12 @@ const ChartDetails = props => {
     const [info, error] = useAQIAPIs(
         `${FEED_AQICN_URL}${props.uid}/?token=${TOKEN}`
     );
-  
+
     let result = []
-    if (info.data && info.data.forecast) result = info.data.forecast.daily.o3.map((day, i) => {
+    if (info.data && info.data.forecast?.daily) result = info.data.forecast.daily.o3.map((day, i) => { //add the condition for missing value in data
         let result = {
             name: day.day,
-            o3: day.min
+            o3: day.avg,
         } 
         if (info.data.forecast.daily.pm25 && info.data.forecast.daily.pm25[i]) result.pm25 = info.data.forecast.daily.pm25[i].avg
         if (info.data.forecast.daily.pm10 && info.data.forecast.daily.pm10[i]) result.pm10 = info.data.forecast.daily.pm10[i].avg

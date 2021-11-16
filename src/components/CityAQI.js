@@ -9,6 +9,9 @@ const CityAQI = props => {
     const uid = props.cityInfo.uid;
     const geo = props.cityInfo.station.geo;
     
+     console.log("uid value");
+     console.log(uid);
+
     const getAtTimeFormatted = time => {
         return moment(time).format('h:mm:ss a');
     }

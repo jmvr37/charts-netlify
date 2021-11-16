@@ -3,7 +3,7 @@ import CityAQI from './CityAQI';
 
 const CityAQIList = props => {
     let  cityList = [];    
-    if (props.data) {
+    if (props.data) { 
         cityList = props.data;
         console.log("citylist")
         console.log(cityList);
